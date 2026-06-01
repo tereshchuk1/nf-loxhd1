@@ -1,0 +1,30 @@
+# Nextflow workspace
+work/
+.nextflow/
+.nextflow.log*
+
+# Large reference data (download separately, see README)
+assets/canFam3.1.fa
+assets/canFam3.1.fa.fai
+assets/canFam3.1.dict
+assets/canFam3.1.chr.fa
+assets/canFam3.1.chr.fa.fai
+assets/canFam3.1.chr.dict
+assets/vep_cache/
+
+# Large pipeline outputs (too big for git)
+results/bam/
+results/vcf/*.vcf.gz
+results/vcf/*.tbi
+results/reference/canFam3.1*
+results/vep_cache_store/
+
+# OS / editor noise
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc

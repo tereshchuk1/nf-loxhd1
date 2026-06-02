@@ -35,7 +35,7 @@ graph TD
     CALL[CALL_WES]
     ANN[ANNOTATE_WES]
     LOC[LOCUS_WES]
-    
+
     PRE --> S2B
     S2B --> QC
     S2B --> PREP
@@ -45,10 +45,11 @@ graph TD
     CALL --> ANN
     DL --> ANN
     CALL --> LOC
-    
-    style LOC fill:#90EE90
-    style REF fill:#FFE4B5
-    style DL fill:#FFE4B5
+
+    classDef setup fill:#dbeafe,stroke:#1e40af,color:#1e3a8a
+    classDef result fill:#bbf7d0,stroke:#15803d,color:#14532d
+    class REF,DL setup
+    class LOC result
 ```
 
 | Process | Purpose | Tool |

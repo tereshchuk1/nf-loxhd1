@@ -9,8 +9,7 @@ an end-to-end variant calling workflow on canFam3.1 and outputs the genotype at 
 candidate locus plus a annotated VCF.
 
 ## Key result
-| |  |
-|---|---|
+|  |  |
 | Sample | SRR13743383 (BioSample `SAMN17983069`, affected Rottweiler, WES) |
 | Position | chr7:44,806,821 |
 | Variant | G > C |

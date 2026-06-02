@@ -1,6 +1,5 @@
-// modules/reference.nf
 // Renames canFam3.1 NCBI contig names to chr-style (to match PRJNA702911 BAMs),
-// then indexes. Self-contained: awk + sed + samtools, all in the samtools container.
+// then indexes. 
 // Map: chr1..chr38 = NC_006583.3..NC_006620.3, chrX = NC_006621.3, chrMT = NC_002008.4.
 
 process PREPARE_REFERENCE {

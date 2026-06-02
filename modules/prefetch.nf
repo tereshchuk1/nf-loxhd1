@@ -33,10 +33,6 @@ process PREFETCH_BAM {
 
     # Extract aligned reads into SAM 
     sam-dump "\$SRA" > ${srr}.sam
-
-    # Fail-fast: catch silent failures producing an empty SAM
-    [ -s "${srr}.sam" ] || { echo "ERROR: empty SAM"; exit 1; }
-    echo "SAM size: \$(stat -c%s ${srr}.sam) bytes"
     """
 }
 

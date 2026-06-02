@@ -6,10 +6,11 @@ A Nextflow + Docker pipeline that reproduces the publicly executable part of Hyt
 
 Starting from raw SRA data for one affected Rottweiler, the pipeline runs
 an end-to-end variant calling workflow on canFam3.1 and outputs the genotype at the LOXHD1
-candidate locus plus a VEP-annotated VCF.
+candidate locus plus a annotated VCF.
 
 ## Key result
 
+|---|---|
 | Sample | SRR13743383 (BioSample `SAMN17983069`, affected Rottweiler, WES) |
 | Position | chr7:44,806,821 |
 | Variant | G > C |
@@ -20,8 +21,6 @@ candidate locus plus a VEP-annotated VCF.
 
 Full output: `results/locus/SRR13743383_WES_locus.txt`.
 Detailed results: [RESULTS.md](RESULTS.md).
-
-## Pipeline structure
 
 ## Pipeline structure
 

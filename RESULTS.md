@@ -45,27 +45,6 @@ translates to Glycine → Alanine.
 `ENSCAFT00000049867` is the canonical full-length isoform — its amino-acid
 position 1914 matches the paper's result (p.(G1914A)). 
 
-## 3. Variant calling statistics
-
-| Metric | Value |
-|---|---|
-| Total variants (raw VCF) | 755,487 |
-| Total variants (annotated VCF) | 755,487 |
-| Variants with VEP CSQ annotation | 755,487 (100%) |
-
-100% annotation rate confirms no silent failures from contig-name mismatch.
-
-Reproducible with:
-
-```bash
-echo "Raw VCF:"
-zcat results/vcf/SRR13743383.vcf.gz | grep -v "^#" | wc -l
-echo "Annotated VCF:"
-zcat results/vcf/SRR13743383.annotated.vcf.gz | grep -v "^#" | wc -l
-echo "Variants with CSQ:"
-zcat results/vcf/SRR13743383.annotated.vcf.gz | grep -v "^#" | grep -c "CSQ="
-```
-
 ## 3. Mapping QC
 
 `samtools flagstat`:
